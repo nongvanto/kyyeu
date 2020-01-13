@@ -116,10 +116,11 @@ body:before {
 	flex-wrap: wrap;
 }
 .layout-detail,.news{
-	width:22%;
+	width:20%;
 	height:460px;
 	background:transparent;
 	margin-bottom:30px;
+	margin-right:10px;
 }
 .layout-detail img,.news img{
 	width:98%;
@@ -243,53 +244,52 @@ span.icon i{
 li.list-group-item {border: none;}
 .table-header{
 	width:30%;
-	height:800px;
+	height:700px;
 	background: transparent;
 	position: relative;
-	overflow: hidden;
 	display: block;
 	margin-top:40px;
+	border:1px solid #EFF0EA;
+	overflow: hidden;
 }
 .phan-circle{
-	width:200px;
-	height:200px;
-	background:red;
-	border-radius: 500px;
-	position:absolute;
-	left:50%;
-	margin-left:-100px;
-	top:0px;
-	z-index: 10;
-	border:1px solid #EFF0EA;
+	width:100%;
+	height:13%;
+	background:#dee2e640;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #FDFDFA;
+}
+.phan-circle span{
+	font-weight:bold;
+	color:black;
+	font-size: 23px;
+	text-align: center;
+	display: block;
 }
 .content-table-header{
 	width:100%;
-	height:auto;
+	height:87%;
 	background: #FDFDFA;
-	position: absolute;
-	bottom:0;
-	left:0;
-	z-index: 5;
-	border:1px solid #EFF0EA;
-	padding-top:150px;
+}
+.border-above{
+	width: 50px;
+    height: 70px;
+    background: #f88005;
+    position: absolute;
+    right: -23px;
+    top: -37px;
+    transform: rotate(-45deg)
 }
 .content-table-header p{
 	background: transparent;
-	padding:20px 0;
-	text-align: center;
+	padding-left:10px;
+	padding-right: 5px;
 	font-size: 18px;
 	border-bottom:1px solid #EFF0EA;
 }
 .content-table-header button{
-	position: absolute;
-	left:50%;
-	bottom:20px;
-	margin-left:-65px;
 }
 .chua-khoi-table{
 	width:100%;
@@ -435,11 +435,13 @@ li.list-group-item {border: none;}
       }
 
       .layout-detail {
-        width: 25%;
+        width: 22%;
       }
+
 @media (max-width: 800px){
  .layout-detail {
 	width : 100%;
+	height: auto;
 }
 
 .layout-detail img {
@@ -448,7 +450,6 @@ li.list-group-item {border: none;}
 }
 
 }
-<!--->
 
  
  
@@ -841,8 +842,9 @@ div.footer-icons>a:nth-child(4):hover{
     height: auto;
 }
 .concept-layout-detail {
-    width: 45%;
+    width: 100%;
 }
+
 .panel-layout {
     width: 100%;
 }
@@ -874,5 +876,23 @@ div.footer-icons>a:nth-child(4):hover{
 .showText {
     width: 100%;
     background: white;
+}
+}
+@media (max-width: 10000px){
+.table-header {
+	width: 40%;
+	height: 100%;
+}
+}
+@media (max-width: 500px){
+.table-header {
+	width: 100%;
+	height: 100%;
+}
+}
+@media (max-width: 800px){
+div.icobox p {
+    font-size: 15px;
+    padding: 0 10px;
 }
 }
